@@ -1,0 +1,184 @@
+@font-face {
+  font-family: yekan;
+  src: url("fonts/Yekan.eot");
+  src: url("fonts/Yekan.eot?#iefix") format("yekan-opentype"),
+    url("fonts/Yekan.woff") format("woff"),
+    url("fonts/yekan-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  direction: rtl;
+  font-family: "yekan";
+  background-color: #ecedef;
+  color: #fff;
+  line-height: 1.8;
+}
+
+a {
+  text-decoration: none;
+}
+
+#container {
+  margin: 0px auto;
+  max-width: 430px;
+  padding: 15px;
+}
+
+.form-wrap {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  background-color: #fff;
+  padding: 15px 25px;
+  color: #333;
+  margin: 0 1 5px 1;
+  border-radius: 5px;
+}
+
+.form-wrap 
+h2,
+.form-wrap p {
+  text-align: center;
+}
+
+.form-wrap .form-group {
+  margin-top: 15px;
+}
+
+.form-wrap .form-group label {
+  display: block;
+  color: #666;
+}
+
+.form-wrap .form-group input {
+  width: 100%;
+  padding: 10px;
+  border: #ddd 1px solid;
+  border-radius: 5px;
+}
+
+.form-wrap button {
+  padding: 10px;
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  background-color: #49c1a2;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid #49c1a2;
+  font-family: "yekan";
+  font-size: 15px;
+  transition: 1s;
+  border-radius: 5px;
+}
+
+.form-wrap button:hover {
+  background-color: #37a08e;
+  transition: 1s;
+}
+
+.form-wrap .bottom-text {
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 10px;
+  color: #333;
+}
+
+footer a {
+  color: #49c1a2;
+}
+
+.sex {
+  margin: 8px 0 0 0;
+}
+.be-radio {
+  padding: 5px 0 0 0;
+}
+
+.bmi-result {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.flip-card {
+  background-color: transparent;
+  width: 50%;
+  height: 100px;
+  perspective: 1000px;
+  margin: 2px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+}
+
+.flip-card:focus {
+  outline: 0;
+}
+
+.flip-card:hover .flip-card-inner,
+.flip-card:focus .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.flip-card-front {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  background: #fff;
+  color: #333 !important;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.flip-card-back {
+  background: #fff;
+  color: #333 !important;
+  transform: rotateY(180deg);
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.genderLabel {
+  padding: 3px;
+}
+h2 {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #37a08e;
+  width: 50%;
+  text-align: center;
+  margin: auto;
+}
+#weight-input,
+#height-input {
+  background-color: #ecedef;
+}
+.healthPresent {
+  padding: 3px;
+}

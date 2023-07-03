@@ -1,0 +1,79 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <meta meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>BMI Calculator</title>
+  </head>
+  <body>
+    <!-- Container Start -->
+    <div id="container">
+      <!-- Form Wrap Start -->
+      <div class="form-wrap">
+        <h2>محاسبه توده‌بدنی</h2>
+        <div class="line"></div>
+        <!-- Form Start -->
+        <form class="form">
+          <div class="form-group">
+            <label for="weigh" >وزن</label>
+            <input type="text" name="weight" id="weight-input" />
+          </div>
+          <div class="form-group">
+            <label for="height">قد</label>
+            <input type="text" name="height" id="height-input" />
+          </div>
+          <div class="sex">
+            <label>جنسیت</label>
+            <div class="be-radio inline">
+              <input
+                class="user_gender"
+                checked=""
+                name="gender"
+                value="men"
+                type="radio"
+              />
+              <label class="genderLabel">آقا</label>
+              <input
+                class="user_gender"
+                name="gender"
+                value="women"
+                type="radio"
+              />
+              <label class="genderLabel">خانم</label>
+            </div>
+          </div>
+          <button type="submit" class="loading">محاسبه</button>
+        </form>
+        <!-- Form Close -->
+      </div>
+      <!-- Form Wrap Close -->
+      
+      <div class="bmi-result">
+        <div class="flip-card flip-right" tabindex="0">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h4 class="resultBox">شاخص توده بدنی(bmi)</h4>
+            </div>
+            <div class="flip-card-back">
+              <p class="bmiPresent">هنوز اطلاعاتی وارد نکرده اید</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card" tabindex="0">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h4 class="resultBox">وضعیت سلامتی</h4>
+            </div>
+            <div class="flip-card-back">
+              <p class="healthPresent">هنوز اطلاعاتی وارد نکرده اید</p>
+            </div>
+          </div>
+      </div>
+    </div>
+    <!-- Container Close -->
+    <script src="/js/app.js"></script>
+  </body>
+</html>
